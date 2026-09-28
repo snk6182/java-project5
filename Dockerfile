@@ -5,3 +5,4 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 COPY target/*.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]`
+
