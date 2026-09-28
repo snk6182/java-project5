@@ -64,7 +64,7 @@ jobs:
             docker stop java-project5 || true
              docker rm java-project5 || true
   
-            docker run -d --name java-project5 -p 8080:8080 ${{ secrets.DOCKER_USERNAME }}/java-project5:v1
+            docker run -d --name java-project5 -p 8082:8080 ${{ secrets.DOCKER_USERNAME }}/java-project5:v1
 
             docker ps
 
